@@ -44,19 +44,19 @@
   margin: 8px;
 
   .banco {
-
+    font-weight: bold;
   }
 
   .tipo {
-
+    font-style: italic;
   }
 
   .numero{
-    font-weight: bold;
+    font-weight: bolder;
   }
   
   .titular {
-
+    text-decoration: underline;
   }
 }
 
