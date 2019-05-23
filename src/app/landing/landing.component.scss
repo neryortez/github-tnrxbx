@@ -20,7 +20,7 @@
           place-content: center;
         }
         
-        @media (max-width: 425px) {
+        @media (max-width: 700px) {
           grid-template: 
             "btn1"
             "btn2"
@@ -62,7 +62,7 @@
 
 
 
-@media (max-width: 639px) {
+@media (max-width: 425px) {
   :host {
     grid-template: 
       "foto"
