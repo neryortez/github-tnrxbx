@@ -1,0 +1,72 @@
+:host {
+  display: grid;
+  grid-template: 
+    "foto content"
+    "banco banco"
+    / 1fr 1fr;
+    grid-gap: 8px;
+    
+    .content {
+      display: grid;
+      place-content: center;
+      
+      .buttons {
+        display: grid;
+        grid-template: "auto auto auto";
+        place-items: center;
+        
+        a {
+          width: min-content;
+          place-content: center;
+        }
+        
+        @media (max-width: 425px) {
+          grid-template: 
+            "btn1"
+            "btn2"
+            "btn3";
+        }
+      }
+    }
+
+.foto {
+  width: 100%;
+  object-fit: cover;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+}
+
+.cuenta {
+  margin: 8px;
+
+  .banco {
+
+  }
+
+  .tipo {
+
+  }
+
+  .numero{
+    font-weight: bold;
+  }
+  
+  .titular {
+
+  }
+}
+
+
+
+@media (max-width: 639px) {
+  :host {
+    grid-template: 
+      "foto"
+      "content"
+      "banco"
+  }
+}

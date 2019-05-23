@@ -1,0 +1,13 @@
+:host {
+  display: grid;
+  grid-template: 
+    "toolbar" auto
+    "content" 1fr
+    "footer" auto;
+  height: 100vh;
+}
+
+.main {
+  overflow: auto;
+  grid-area: content;
+}
