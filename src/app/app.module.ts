@@ -11,6 +11,8 @@ import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { LandingComponent } from './landing/landing.component';
+import { InfoComponent } from './info/info.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 const routes: Routes = [
   {
@@ -40,7 +42,7 @@ const routes: Routes = [
     FormsModule,
     MatButtonModule,
      ],
-  declarations: [ AppComponent, HelloComponent, LandingComponent ],
+  declarations: [ AppComponent, HelloComponent, LandingComponent, InfoComponent, ContactoComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
