@@ -15,7 +15,7 @@
       
       .buttons {
         display: grid;
-        grid-template: "auto auto auto";
+        grid-template: "auto auto auto auto";
         place-items: center;
         
         a {
@@ -29,16 +29,25 @@
         .btn2 {background-color: rgb(0, 128, 0)}
         .bnt3 {background-color: rgb(0, 63, 0); color: white}
         
-        @media (max-width: 700px) {
-          grid-template: 
-            "btn1"
-            "btn2"
-            "btn3";
+        @media (max-width: 1024px) {
+          grid-row-gap: 4px;
+          grid-template:
+            "auto auto"
+            "auto auto";
           place-items: unset;
           a {
             width: unset;
             margin: 2px 12px 2px 12px;
           }
+        }
+
+        @media (max-width: 700px) {
+          grid-template: 
+            "btn100"
+            "btn1"
+            "btn2"
+            "btn3";
+          place-items: unset;
         }
       }
     }
