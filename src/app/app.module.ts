@@ -13,6 +13,7 @@ import { HelloComponent } from './hello.component';
 import { LandingComponent } from './landing/landing.component';
 import { InfoComponent } from './info/info.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { DavidFotoComponent } from './david-foto/david-foto.component';
 
 const routes: Routes = [
   {
@@ -21,14 +22,17 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'logging',
-    redirectTo: 'admin',
-    pathMatch: 'full'
-  },
-  {
     path: 'home',
     component: LandingComponent,
   },
+  {
+    path: 'info',
+    component: InfoComponent,
+  },
+  {
+    path: 'contacto',
+    component: ContactoComponent,
+  }
 ];
 
 @NgModule({
@@ -37,12 +41,15 @@ const routes: Routes = [
     BrowserAnimationsModule,
     RouterModule.forRoot(
       routes,
-      // {enableTracing: true}
+      {
+        scrollPositionRestoration: 'enabled',
+      // enableTracing: true,
+      }
       ),
     FormsModule,
     MatButtonModule,
      ],
-  declarations: [ AppComponent, HelloComponent, LandingComponent, InfoComponent, ContactoComponent ],
+  declarations: [ AppComponent, HelloComponent, LandingComponent, InfoComponent, ContactoComponent, DavidFotoComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
