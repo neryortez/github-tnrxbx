@@ -1,0 +1,48 @@
+:host {
+  display: grid;
+  grid-template: 
+    "foto info"
+    "foto banco"
+    / 1fr 1fr;
+  grid-gap: 8px;
+  height: 100vh;
+  text-align: justify;
+
+  @media (max-width: 700px) {
+    grid-template: 
+      "foto info"
+      "banco banco";
+  }
+
+  @media (max-width: 425px) {
+    margin: 8px;
+    grid-template: 
+      "foto"
+      "info"
+      "banco";
+  }
+
+  .info-david {
+    grid-area: info;
+    display: grid;
+    place-items: center;
+    margin: 8px;
+  }
+  
+  .foto {
+    grid-area: foto;
+  }
+
+  .fi-logo {
+    object-fit: cover;
+    width: 200px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+  }
+
+  fi {
+    color: green;
+  }
+}
