@@ -2,6 +2,15 @@
 # Created by https://www.gitignore.io/api/node,angular
 # Edit at https://www.gitignore.io/?templates=node,angular
 
+### Firebase ###
+.idea
+**/node_modules/*
+**/.firebaserc
+
+### Firebase Patch ###
+.runtimeconfig.json
+.firebase/
+
 ### Angular ###
 ## Angular ##
 # compiled output
