@@ -12,6 +12,12 @@
       place-content: center;
       padding: 8px;
       text-align: justify;
+
+      .warning {
+        color: red;
+        font-weight: 700;
+        padding: 4px;
+      }
       
       .buttons {
         display: grid;
